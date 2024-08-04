@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить фильм (film_form.html)</title>
+</head>
+<body>
+<h1>Добавить фильм (форма)</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Добавить в базу</button>
+</form>
+<a href="{% url 'film_list' %}">Обратно к списку фильмов</a>
+</body>
+</html>

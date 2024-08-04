@@ -1,0 +1,17 @@
+# add_film.html
+<!DOCTYPE html>
+<html lang="ru">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить фильм (add)</title>
+</head>
+<body>
+<h1>Добавить фильм (add_film.html)</h1>
+<form method="post" novalidate>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Добавить фильм (add_film.html)</button>
+</form>
+</body>
+</html>
